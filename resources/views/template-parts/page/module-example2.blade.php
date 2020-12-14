@@ -1,0 +1,1 @@
+<div class="container"><h3>Module: Example2 {{$data->ex2}}</h3></div>

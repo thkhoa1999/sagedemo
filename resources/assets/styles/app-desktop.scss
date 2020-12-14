@@ -1,0 +1,23 @@
+// Override bootstrap variables ---
+// @import "core/base/setting";
+@import "core/base/setting";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// mixins, placehoder custom ---
+@import "core/base/mixins";
+@import "core/base/placehoder";
+
+// base desktop ---
+@import "core/base-desktop/custom";
+@import "core/base-desktop/space";
+
+// lib desktop ---
+@import "core/lib-desktop/popup";
+
+// module desktop ---
+@import "modules-desktop/global/*.scss";
+@import "modules-desktop/*.scss";
+

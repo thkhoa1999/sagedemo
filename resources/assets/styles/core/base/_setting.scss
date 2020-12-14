@@ -1,0 +1,216 @@
+/* font-family other */
+$lt: "Lato", serif;
+$slick: "slick";
+$icomoon: "icomoon";
+
+/* font-family body */
+$font-family-base: $lt;
+
+/* set screen */
+
+// variables gird
+$col-xs: 0;
+$col-sm: 481px;
+$col-md: 768px;
+$col-lg: 992px;
+$col-xl: 1200px;
+$col-xxl: 1366px;
+
+// variables max widths
+$media-sm: 100%;
+$media-md: 100%;
+$media-lg: $col-lg - 32;
+$media-xl: 1140px;
+$meddia-xxl: 1370px;
+
+/* class bootstrap helper (d-md-none d-lg-none) */
+$grid-breakpoints-custom: (xs: 0, md: $col-md, lg: $col-lg);
+$grid-breakpoints-mb: (xs: 0);
+$grid-breakpoints-dt: (md: $col-md, lg: $col-lg);
+
+/* class media bootstrap reponsive helper @include media-breakpoint-up(xl) */
+$grid-breakpoints-media: (xs: $col-xs, sm: $col-sm, md: $col-md, lg: $col-lg, xl: $col-xl);
+
+/* class gird (col-md-6, container max-width) */
+// $grid-breakpoints: (xs: $col-xs, sm: $col-sm, md: $col-md, lg: $col-lg);
+$container-max-widths: (sm: 100%, md: 100%, lg: $media-lg, xl: $media-xl, xxl: $meddia-xxl);
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+/* Color system */
+
+$white: #fff !default;
+$gray-100: #ebebeb !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: (
+100: $gray-100,
+200: $gray-200,
+300: $gray-300,
+400: $gray-400,
+500: $gray-500,
+600: $gray-600,
+700: $gray-700,
+800: $gray-800,
+900: $gray-900) !default;
+
+$blue: #dc3545 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red: #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #0062b0 !default;
+// $color-006: #0062b0;
+// $color-d5 : #d5b28d;
+// $color-86: #8691a4;
+// $color-e4: #e4e4e4;
+// $color-2f: #2f4eea;
+// $color-14: #146db3;
+$colors: (blue: $blue,
+indigo: $indigo,
+purple: $purple,
+pink: $pink,
+red: $red,
+orange: $orange,
+yellow: $yellow,
+green: $green,
+teal: $teal,
+cyan: $cyan,
+white: $white,
+gray: $gray-600,
+gray-dark: $gray-800
+) !default;
+
+$theme-colors: (primary: $blue,
+secondary: $gray-600,
+success: $green,
+info: $cyan,
+warning: $yellow,
+danger: $red,
+light: $gray-100,
+dark: $gray-800
+) !default;
+
+
+/* body */
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+/* color heading */
+// set color for heading
+$color-h: $body-color;
+
+/* color custom */
+
+/* link */
+
+$link-color: $blue !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Paragraphs
+$paragraph-margin-bottom: 1rem;
+
+// Options
+$enable-rounded: false !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// Components
+
+$border-width: 1px !default;
+$border-color: $gray-900 !default;
+$border-radius: .25rem !default;
+$caret-width: .3em !default;
+$transition-base: all .2s ease-in-out !default;
+$transition-fade: opacity .15s linear !default;
+$transition-collapse: height .35s ease !default;
+
+/* btn custom */
+
+$btn-font-weight: 500 !default;
+//$btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
+//$btn-focus-box-shadow:           0 0 0 3px rgba(theme-color("primary"), .25) !default;
+//$btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
+$btn-link-disabled-color: $gray-900 !default;
+$btn-border-radius: $border-radius !default;
+$btn-transition: .25s all !default;
+$border-color: $gray-100;
+
+
+/* font size */
+
+@function rem($pixels, $context: 16) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+$font-b: 16;
+$fontpx: 16px;
+
+/* set style body */
+
+$font-size-base : rem($font-b);
+$line-height-base : 28/$font-b !default;
+$font-weight-base : 300;
+
+/* font heading */
+
+$h1-font-size : rem(36);
+$h2-font-size : rem(28);
+$h3-font-size : rem(24);
+$h4-font-size : rem(17);
+$h5-font-size : rem(16);
+$h6-font-size : rem(14);
+
+/* heading custom */
+
+$headings-margin-bottom: 1rem !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+
+/* .form-control */
+
+$input-btn-padding-y: rem(15);
+$input-btn-padding-x: rem(20);
+$input-btn-line-height: 1.2;
+$input-color: $color-h;
+$input-bg: $body-bg;
+$input-btn-border-width: 1px;
+$input-border-color: #212529;
+$input-border-radius: 0;
+$input-placeholder-color: $gray-900;
+$input-disabled-bg: $gray-100;
+
+/* .breadcrumb */
+
+$breadcrumb-padding-y: rem(1);
+$breadcrumb-padding-x: rem(0);
+$breadcrumb-bg: $white;

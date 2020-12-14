@@ -1,0 +1,19 @@
+.footer {
+  padding-top: 80px;
+  background-color: $black;
+  color: $white;
+  @extend %parent-link-inhert;
+}
+
+.footer-menu {
+  margin-bottom: 50px;
+
+  li {
+    line-height: (20/14);
+  }
+}
+
+.footer-copyright {
+  margin-bottom: 0;
+  @extend %parent-link-inhert;
+}

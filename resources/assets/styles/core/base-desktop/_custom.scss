@@ -1,0 +1,31 @@
+@include media-breakpoint-up(sm) {
+  .main-content {
+    padding-top: 80px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .main-content {
+    padding-top: 110px;
+  }
+  .last-lg-none {
+    // @extend %last;
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .touch {
+    * {
+      cursor: pointer;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container {
+    max-width: $media-xl;
+  }
+}

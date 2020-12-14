@@ -1,0 +1,19 @@
+.btn-white{
+  background: $white;
+  color: $black;
+  border-color: $white;
+  &:hover,
+  &:focus{
+    background-color: transparent;
+    color: $white;
+  }
+}
+.btn-outline-white{
+  border-color: $white;
+  color: $white;
+  &:hover,
+  &:focus{
+    background: $white;
+    color: $black;
+  }
+}
