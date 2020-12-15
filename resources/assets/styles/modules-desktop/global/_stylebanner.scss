@@ -1,4 +1,13 @@
 #myBanner img {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+  height: auto;
 }
+
+
+
+#topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }

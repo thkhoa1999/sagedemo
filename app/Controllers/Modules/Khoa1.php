@@ -3,14 +3,13 @@
 namespace App\Controllers\Modules;
 use App\Services\Queries;
 
-class Banner
+class Khoa1
 {
     public function dataModule($module)
     {
         return (object) [
-            'module' => "$module",
+            'module' => $module,
             'banner' => $this->getData()
-
         ];
     }
     protected function getData(){

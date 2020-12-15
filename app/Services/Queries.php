@@ -45,12 +45,15 @@ class Queries
                     'caption' => $Imgcaption,
                     'thumb' => $thumb,
                     'width' => $width,
-                    'height' => $height,
+                    'height' => $height,                   
                 ];
             },$queryAll->posts);
             wp_reset_postdata();
         }
         return $banner;
     }
+   
+
+    
 
 }

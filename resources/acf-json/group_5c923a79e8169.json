@@ -82,6 +82,15 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                "layout_5fd8561aefdb2": {
+                    "key": "layout_5fd8561aefdb2",
+                    "name": "khoa1",
+                    "label": "module1",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -106,5 +115,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1607928272
+    "modified": 1608013338
 }
